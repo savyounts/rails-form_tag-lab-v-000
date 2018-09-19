@@ -8,5 +8,6 @@ class Student < ActiveRecord::Base
 
   def create
     Student.create(params[:student])
+    redirect_to students_path
   end
 end
